@@ -1,0 +1,109 @@
+@CHARSET "UTF-8";
+
+html body {
+	margin: 0;
+	padding: 0;
+	background: url("../images/bg.jpg");
+}
+
+.all {
+	margin: 10px auto;
+	padding: 0;
+	width: 800px;
+	height: 620px;
+	border: 1px solid #F6F7F5;
+	opacity: 0.7;
+	background: #F6F7F5;
+	border-radius: 10px;
+}
+
+.top {
+	margin: 0 auto;
+	width: 500px;
+	height: 40px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.top p {
+	margin: 0;
+	padding: 7px;
+	font-size: 24px;
+	font-weight: 590;
+}
+
+.top img {
+	margin: 0;
+	padding: 0;
+	width: 45px;
+	height: 45px;
+	float: left;
+	position: relative;
+	left: 140px;
+}
+
+.content {
+	margin: 0 auto;
+	padding: 0;
+	width: 800px;
+	height: 500px;
+	border-radius: 10px;
+}
+
+.box, .hobby {
+	margin: 20px auto;
+	width: 510px;
+	font-size: 18px;
+}
+
+.box input {
+	width: 410px;
+	height: 35px;
+	font-size: 18px;
+	line-height: 35px;
+}
+
+.occupation, .sex {
+	margin: 20px auto;
+	width: 510px;
+	height: 35px;
+	font-size: 18px;
+	line-height: 35px;
+	border-radius: 10px;
+}
+
+.occupation select {
+	width: 412px;
+	height: 35px;
+	font-size: 18px;
+	line-height: 35px;
+	border-radius: 5px;
+}
+
+.hobby textarea {
+	width: 405px;
+	height: 90px;
+	font-size: 18px;
+	line-height: 35px;
+	text-align: left;
+	border-radius: 5px;
+}
+
+.bottom {
+	margin: 0 auto;
+	width: 800px;
+	height: 40px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.bottom button {
+	padding: 2px 35px;
+}
+
+.footer {
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+}
