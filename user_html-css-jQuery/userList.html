@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>userList</title>
+    <script type="text/javascript" src="plugins/jQuery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="all">
+        <div class="head">
+            <img src="images/logo.png">
+            <span>用户管理系统</span>
+            <div class="top-right">
+                <a href="#">帮助</a>&nbsp; &nbsp;
+                <a href="#">退出</a>
+            </div>
+        </div>
+        <div id="nav">
+            <div id="left">
+                <div class="left-hr">
+                    <hr>
+                    <a href="userList.html">用户查询</a>
+                    <hr>
+                    <a href="userForm.html">用户新增</a>
+                    <hr>
+                </div>
+                <div class="left-img">
+                    <img src="images/avatar.jpeg">
+                    <p>当前登录用户</p>
+                </div>
+            </div>
+            <div id="right">
+                <div class="right-serch">
+                    <form action="#" method="post">
+                        <label for="username">用户名称:</label>
+                        <input type="text" id="username" name="username">
+                        <button type="submit">查询</button>
+                    </form>
+                    <div class="right-table">
+                        <table border="1" width="780px" cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="th1">
+                                        <input type="checkbox" name="checkboxItem" id="choice">用户名称</th>
+                                    <th>职业</th>
+                                    <th>邮箱</th>
+                                    <th>性别</th>
+                                    <th>特长</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="th1">
+                                        <input type="checkbox" name="checkboxItem">轻实训</td>
+                                    <td>学生</td>
+                                    <td>tiger@shixun.online</td>
+                                    <td>男</td>
+                                    <td>书法、乐器</td>
+                                    <td><a href="#">编辑</a>&nbsp; &nbsp;<a href="#">删除</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="th1">
+                                        <input type="checkbox" name="checkboxItem">王宇宙</td>
+                                    <td>程序猿</td>
+                                    <td>mike@qingshixun.com</td>
+                                    <td>男</td>
+                                    <td>运动</td>
+                                    <td><a href="#">编辑</a>&nbsp; &nbsp;<a href="#">删除</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="th1">
+                                        <input type="checkbox" name="checkboxItem">张丽丽</td>
+                                    <td>UI设计</td>
+                                    <td>jessie@google.com</td>
+                                    <td>女</td>
+                                    <td>音乐</td>
+                                    <td><a href="#">编辑</a>&nbsp; &nbsp;<a href="#">删除</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+
+</html>
