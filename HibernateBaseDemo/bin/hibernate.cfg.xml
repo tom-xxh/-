@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+      "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- hibernate 第一部分[数据库连接信息] -->
+		<property name="connection.url">jdbc:mysql://localhost:3306/commodity?characterEncoding=UTF-8</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">txd19931018txd</property>
+
+		<!-- hibernate 第二部分[hibernate 参数控制] -->
+		<property name="hibernate.dialect">online.shixun.common.MySQL5InnoDBUTF8Dialect</property><!-- 
+			sql正对的是mysql数据库 -->
+		
+		<property name="hibernate.show_sql">true</property><!-- 显示sql -->
+		<property name="hibernate.format_sql">true</property><!-- sql格式化 -->
+		<property name="hbm2ddl.auto">update</property><!-- ddl控制 -->
+
+		<!-- hibernate 第三部分[表的映射信息][注解] -->
+		<mapping class="online.shixun.model.Commodity" />
+
+	</session-factory>
+</hibernate-configuration>
