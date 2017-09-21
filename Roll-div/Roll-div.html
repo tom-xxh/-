@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Roll-div</title>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <style type="text/css">
+    html body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        width: 550px;
+        height: 500px;
+        margin: 40px auto;
+    }
+
+    .well {
+        height: 500px;
+        overflow-y: scroll;
+    }
+
+    .test {
+        width: 200px;
+        height: 2000px;
+        background: linear-gradient(#73FD76, #EE00EE);
+    }
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="well left">
+            <div class="test"></div>
+        </div>
+        <div class="well right">
+            <div class="test"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.left').scroll(function() {
+            $('.right').scrollTop($(this).scrollTop());
+        });
+    });
+    </script>
+</body>
+
+</html>
