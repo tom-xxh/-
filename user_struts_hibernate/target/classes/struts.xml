@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<package name="default" namespace="/" extends="struts-default">
+		<!-- 跳转到用户信息管理页面 -->
+		<!-- <action name="userinfo" class="userAction" method="findUsers">
+			<result name="list">WEB-INF/view/UserList.jsp
+			</result>
+		</action> -->
+		
+		
+		<!-- 跳转到用户信息管理页面 -->
+		<action name="userinfo" class="userAction" method="index">
+			<result name="index">WEB-INF/view/UserList.jsp
+			</result>
+		</action>
+		
+		
+		
+		<!-- 管理员删除用户信息 -->
+		<action name="deleteuserinfo" class="userAction"
+			method="deleteuserinfo">
+			<result name="succeed">WEB-INF/view/UserList.jsp
+			</result>
+		</action>
+		<!-- 管理员查询用户信息并跳转到修改页面 -->
+		<action name="searchuser" class="userAction" method="searchuserInfo">
+			<result name="succeed">WEB-INF/view/UserUpdate.jsp
+			</result>
+		</action>
+		<!-- 管理员在修改页面修改用户信息信息 -->
+		<action name="updateuserinfo" class="userAction"
+			method="updateInfo">
+			<result name="succeed">WEB-INF/view/UserList.jsp
+			</result>
+		</action>
+		<!-- 跳转到添加用户信息页面 -->
+		<action name="toadd" class="userAction" method="toadd">
+			<result name="succeed">WEB-INF/view/UserForm.jsp
+			</result>
+		</action>
+		<!-- 管理员添加用户信息 -->
+		<action name="saveuserinfo" class="userAction" method="adduserInfos">
+			<result name="succeed">WEB-INF/view/UserForm.jsp
+			</result>
+		</action>
+		
+		<!-- 跳转到添加用户分析页面 -->
+		<action name="toanalyze" class="userAction" method="toanalyze">
+			<result name="succeed">WEB-INF/view/analyze.jsp
+			</result>
+		</action>
+	</package>
+</struts>

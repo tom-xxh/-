@@ -1,0 +1,39 @@
+
+/* 默认分页样式 */
+.default-paging {
+	padding: 5px;
+	float: right;
+	font-size: 13px;
+}
+
+.default-paging a, .default-paging a:link, .default-paging a:visited {
+	padding: 5px 10px;
+	margin: 2px;
+	border: 1px solid #aaaadd;
+	text-decoration: none;
+	color: #006699;
+}
+
+.default-paging a:hover, .default-paging a:active {
+	border: 1px solid #5D9CEC;
+	color: #000;
+	text-decoration: none;
+}
+
+.default-paging span.current {
+	padding: 5px 10px;
+	margin: 2px;
+	border: 1px solid #5D9CEC;
+	font-weight: bold;
+	background-color: #5D9CEC;
+	color: #FFF;
+	margin: 2px;
+}
+
+.default-paging span.disabled {
+	padding: 5px 10px;
+	margin: 2px;
+	border: 1px solid #eee;
+	color: #ddd;
+	margin: 2px;
+}
